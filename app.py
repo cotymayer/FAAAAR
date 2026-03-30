@@ -28,18 +28,13 @@ h2 {
     text-align: center;
 }
 
-/* Botones con hover */
-.stButton>button {
-    background-color: #1E6F9F;
-    color: white;
-    border-radius: 15px;  
-    height: 3em;            
-    width: 40px;          
-    font-size: 20px; 
-    font-weight: 600;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    transition: background-color 0.3s ease;
-}
+/* Boton */
+.stButton>button { background-color: #1E6F9F; 
+color: white; 
+border-radius: 8px; 
+height: 3em; 
+font-size: 18px; 
+font-weight: 600; }
 .stButton>button:hover {
     background-color: #145374;
 }
