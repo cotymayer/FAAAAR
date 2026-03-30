@@ -3,12 +3,12 @@ import streamlit as st
 # Configuración de la página, incluyendo favicon
 st.set_page_config(
     page_title="FAAAAR - Formulario de Actividades",
-    page_icon="FAAAAR2025.png",  # logo para la pestaña
+    page_icon="logo-faaaar.png",  # logo para la pestaña
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Estilo personalizado con mejoras
+# Estilo personalizado
 st.markdown("""
 <style>
 .stApp {
@@ -16,13 +16,19 @@ st.markdown("""
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Encabezados centrados y color */
-h1, h2, h3 {
+/* Encabezados más grandes */
+h1 {
+    font-size: 48px;
+    color: #0B3C5D;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
     color: #0B3C5D;
     text-align: center;
 }
 
-/* Botones atractivos con hover y sombra */
+/* Botones con hover */
 .stButton>button {
     background-color: #1E6F9F;
     color: white;
@@ -37,53 +43,37 @@ h1, h2, h3 {
     background-color: #145374;
 }
 
-/* Sidebar */
+/* Sidebar personalizado */
 section[data-testid="stSidebar"] {
     background-color: #0B3C5D;
     color: white;
     padding-top: 20px;
 }
+section[data-testid="stSidebar"] h2 {
+    color: #ffffff;
+}
 
-/* Logo encabezado */
+/* Logo encabezado más pequeño */
 .logo-header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 120px;  /* tamaño discreto */
+    width: 80px;  /* logo más pequeño */
     padding-top: 10px;
     padding-bottom: 10px;
-}
-
-/* Logo de sidebar (opcional) */
-.sidebar-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-/* Card para mensaje de bienvenida */
-.card {
-    background-color: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Logo centrado como encabezado
-st.image("FAAAAR2025.png", use_column_width=False, width=120, caption="", clamp=False)
+# Logo centrado como encabezado, más pequeño
+st.image("FAAAAR2025.png", use_column_width=False, width=80, caption="", clamp=False)
 
-# Encabezado principal
-st.markdown("<h2>Formulario de Actividades - Centro de Simulación</h2>", unsafe_allow_html=True)
+# Encabezado principal más grande
+st.markdown("<h1>Formulario de Actividades - Centro de Simulación</h1>", unsafe_allow_html=True)
 
-# Mensaje de bienvenida dentro de un card
+# Mensaje de bienvenida simple, sin card
 st.markdown(
-    '<div class="card"><p style="text-align: center; font-size: 18px; color: #1E6F9F;">¡Bienvenido/a! Completá los datos solicitados para organizar tu actividad.</p></div>',
+    "<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>¡Bienvenido/a! Completá los datos solicitados para organizar tu actividad de manera eficiente.</p>", 
     unsafe_allow_html=True
 )
 
