@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.set_page_config(
-    page_title="FAAAAR - Solicitud",
+    page_title="FAAAAR - Formulario de Actividades",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -50,12 +50,12 @@ st.image("FAAAAR2025.png", use_column_width=False, width=300, caption="")
 st.markdown("<h2 style='text-align: center; color: #0B3C5D;'>Formulario de Actividades - Centro de Simulación</h2>", unsafe_allow_html=True)
 
 # Mensaje breve casual
-st.markdown("<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>Bienvenido! Por favor, completá con los datos requeridos para el armado de la actividad.</p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>/¡Bienvenido/a! Por favor, completá con los datos solicitados para organizar tu actividad.</p>", unsafe_allow_html=True)
 
 # Botón centrado para empezar con ícono flecha
 col1, col2, col3 = st.columns([3,1,3])
 with col2:
-    if st.button("Empezar ➡️"):
+    if st.button("Empezar"):
         # Cambiar página automáticamente no está disponible nativo,
         # pero podemos guardar un flag en session_state para que el menú lateral empiece en la página 1.
         st.session_state["page"] = "1_Datos_Generales"
