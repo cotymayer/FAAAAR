@@ -46,34 +46,33 @@ h2 {
 /* Sidebar personalizado */
 section[data-testid="stSidebar"] {
     background-color: #0B3C5D;
-    color: white;
+    color: white !important;
     padding-top: 20px;
 }
 section[data-testid="stSidebar"] h2 {
     color: #ffffff;
 }
 
-/* Logo encabezado más pequeño */
+/* Logo encabezado */
 .logo-header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;  /* logo más pequeño */
+    width: 80px;  
     padding-top: 10px;
     padding-bottom: 10px;
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Logo centrado como encabezado, más pequeño
-st.image("FAAAAR2025.png", use_column_width=False, width=80, caption="", clamp=False)
+# Logo centrado como encabezado
+st.image("FAAAAR2025.png", use_column_width=False, width=60, caption="", clamp=False)
 
-# Encabezado principal más grande
-st.markdown("<h1>Formulario de Actividades - Centro de Simulación</h1>", unsafe_allow_html=True)
+# Encabezado principal
+st.markdown("<h1 style='margin-top: -10px;'>Formulario de Actividades - Centro de Simulación</h1>", unsafe_allow_html=True)
 
-# Mensaje de bienvenida simple, sin card
-st.markdown(
-    "<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>¡Bienvenido/a! Completá los datos solicitados para organizar tu actividad de manera eficiente.</p>", 
+# Mensaje de bienvenida
+    "<<p style='text-align: center; font-size: 25px; color: #1E6F9F; margin-top: 15px;'>¡Bienvenido/a! Completá los datos solicitados para organizar tu actividad de manera eficiente.</p>", 
     unsafe_allow_html=True
 )
 
