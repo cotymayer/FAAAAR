@@ -72,6 +72,7 @@ st.image("FAAAAR2025.png", use_column_width=False, width=60, caption="", clamp=F
 st.markdown("<h2 style='margin-top: -10px;'>Formulario de Actividades - Centro de Simulación</h2>", unsafe_allow_html=True)
 
 # Mensaje de bienvenida
+st.markdown(
     "<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>¡Bienvenido/a! Por favor, completá los datos solicitados para organizar tu actividad.</p>", 
     unsafe_allow_html=True
 )
