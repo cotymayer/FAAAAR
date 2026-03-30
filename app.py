@@ -44,7 +44,7 @@ section[data-testid="stSidebar"] {
 """, unsafe_allow_html=True)
 
 # Logo grande centrado
-st.image("logo_faaaar.png", use_column_width=False, width=300, caption="")
+st.image("FAAAAR2025.png", use_column_width=False, width=300, caption="")
 
 # Encabezado
 st.markdown("<h2 style='text-align: center; color: #0B3C5D;'>Formulario de Actividades - Centro de Simulación</h2>", unsafe_allow_html=True)
