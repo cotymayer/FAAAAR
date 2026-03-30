@@ -58,7 +58,7 @@ section[data-testid="stSidebar"] h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80px;  
+    width: 50px;  
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -66,14 +66,17 @@ section[data-testid="stSidebar"] h2 {
 """, unsafe_allow_html=True)
 
 # Logo centrado como encabezado
-st.image("FAAAAR2025.png", use_column_width=False, width=60, caption="", clamp=False)
+st.image("FAAAAR2025.png", use_column_width=False, width=40, caption="", clamp=False)
 
-# Encabezado principal
-st.markdown("<h2 style='margin-top: -10px;'>Formulario de Actividades - Centro de Simulación</h2>", unsafe_allow_html=True)
-
-# Mensaje de bienvenida
+#Título
 st.markdown(
-    "<p style='text-align: center; font-size: 18px; color: #1E6F9F;'>¡Bienvenido/a! Por favor, completá los datos solicitados para organizar tu actividad.</p>", 
+    "<h1 style='text-align: center; color: #0B3C5D; font-size: 50px;'>Formulario de Actividades - Centro de Simulación</h1>",
+    unsafe_allow_html=True
+)
+
+#Bienvenida
+st.markdown(
+    "<p style='text-align: center; font-size: 22px; color: #1E6F9F;'>¡Bienvenido/a! Completá los datos solicitados para organizar tu actividad de manera eficiente.</p>", 
     unsafe_allow_html=True
 )
 
