@@ -32,10 +32,10 @@ h2 {
 .stButton>button {
     background-color: #1E6F9F;
     color: white;
-     border-radius: 16px;  
-    height: 5em;            
-    width: 200px;          
-    font-size: 36px; 
+    border-radius: 16px;  
+    height: 4em;            
+    width: 40px;          
+    font-size: 25px; 
     font-weight: 600;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
@@ -62,19 +62,19 @@ section[data-testid="stSidebar"] h2 {
     width: 30px;  
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: -20px;
+   
 }
 </style>
 """, unsafe_allow_html=True)
 
-# Logo centrado como encabezado
-st.image("FAAAAR2025.png", use_column_width=False, width=30, caption="", clamp=False)
-
 #Título
 st.markdown(
-    "<h1 style='text-align: center; color: #0B3C5D; font-size: 70px;'>Formulario de Actividades - Centro de Simulación</h1>",
+    "<h1 style='text-align: center; color: #0B3C5D; font-size: 60px;'>Formulario de Actividades - Centro de Simulación</h1>",
     unsafe_allow_html=True
 )
+
+# Logo centrado como encabezado
+st.image("FAAAAR2025.png", use_column_width=False, width=20, caption="", clamp=False)
 
 #Bienvenida
 st.markdown(
