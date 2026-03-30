@@ -1,0 +1,25 @@
+import streamlit as st
+
+st.header("Tipo de Actividad")
+
+tipo = st.radio(
+    "Seleccione tipo de actividad",
+    [
+        "Plenaria",
+        "Simulación con escenario",
+        "Simulación con estaciones",
+        "Otro"
+    ]
+)
+
+st.session_state.tipo = tipo
+
+# 🔥 Condicional
+if tipo == "Simulación con estaciones":
+    st.session_state.estaciones = st.number_input(
+        "Cantidad de estaciones",
+        min_value=1
+    )
+
+if tipo == "Otro":
+    st.session_state.otro = st.text_input("Especificar")

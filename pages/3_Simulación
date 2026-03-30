@@ -1,0 +1,48 @@
+import streamlit as st
+import pandas as pd
+
+st.header("Requerimientos de Materiales")
+
+materiales_stock = {
+    "Aula": 3,
+    "Proyector": 2,
+    "Sillas": 50,
+    "Mesa": 10,
+    "Micrófono": 1,
+    "Notebook": 5,
+    "Pizarra": 2
+}
+
+df = pd.DataFrame({
+    "Material": list(materiales_stock.keys()),
+    "Cantidad": [0]*len(materiales_stock),
+    "Stock": list(materiales_stock.values())
+})
+
+edited = st.data_editor(
+    df,
+    column_config={
+        "Cantidad": st.column_config.NumberColumn(
+            min_value=0,
+            step=1
+        )
+    },
+    disabled=["Material", "Stock"],
+    use_container_width=True
+)
+
+st.session_state.materiales = edited
+
+# 🔥 Validación
+errores = []
+
+for i, row in edited.iterrows():
+    if row["Cantidad"] > row["Stock"]:
+        errores.append(f"{row['Material']} supera stock")
+
+st.session_state.errores = errores
+
+if errores:
+    st.error("Errores:")
+    for e in errores:
+        st.write(e)
