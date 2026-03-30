@@ -32,9 +32,10 @@ h2 {
 .stButton>button {
     background-color: #1E6F9F;
     color: white;
-    border-radius: 12px;
-    height: 3em;
-    font-size: 25px;
+     border-radius: 16px;  
+    height: 5em;            
+    width: 200px;          
+    font-size: 36px; 
     font-weight: 600;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     transition: background-color 0.3s ease;
@@ -61,6 +62,7 @@ section[data-testid="stSidebar"] h2 {
     width: 30px;  
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: -20px;
 }
 </style>
 """, unsafe_allow_html=True)
